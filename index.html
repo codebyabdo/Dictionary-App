@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dictionary App</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+  </head>
+  <body>
+    <button
+      id="theme-toggle"
+      class="theme-toggle-btn"
+      aria-label="Toggle Theme"
+      title="Toggle Theme"
+    >
+      <i class="fa-regular fa-lightbulb"></i>
+    </button>
+    <div class="container">
+      <h1 class="title">Dictionary</h1>
+      <form id="search-form">
+        <input id="word-input" placeholder="Enter word" />
+        <button class="submit" type="submit">Search</button>
+      </form>
+
+      <div id="result-container"></div>
+      <div id="history" class="history"></div>
+    </div>
+    <script>
+      (function () {
+        const theme = localStorage.getItem("theme");
+        const themeToggleBtn = document.getElementById("theme-toggle");
+        themeToggleBtn.innerHTML = `<i class="fa-solid fa-lightbulb"></i>`; //
+
+        if (theme === "dark") {
+          document.body.classList.add("dark-theme");
+          themeToggleBtn.innerHTML = `<i class="fa-regular fa-lightbulb"></i>`; // Switch to light theme
+        }
+      })();
+    </script>
+    <script type="module" src="./dist/main.js"></script>
+  </body>
+</html>
