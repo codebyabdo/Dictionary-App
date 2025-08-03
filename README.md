@@ -13,9 +13,9 @@ Users can search for English words and view their definitions, phonetics, exampl
 
 ## 📸 Screenshots
 
-| Home Page | Projects Section |
+| Light Mode | Dark Mode |
 |-----------|------------------|
-| ![Light](./dark.png) | ![Dark](./light.png) |
+| ![Light](./light.png) | ![Dark](./dark.png) |
 
 <!-- Replace with actual screenshots if available -->
 
