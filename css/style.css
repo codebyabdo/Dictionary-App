@@ -204,6 +204,16 @@ audio {
   background-color: var(--bg-color);
 }
 
+.footer {
+  position: fixed;
+  bottom: 25px;
+}
+
+.footer p {
+  color: var(--text-color);
+  font-size: 16px;
+}
+
 /* Dark mode styles */
 body.dark-theme .history ul .history-item:hover,
 body.dark-theme {
@@ -290,4 +300,9 @@ body.dark-theme .theme-toggle-btn {
     width: 3px;
     top: 140%;
   }
+
+    .footer p {
+    font-size: 14px;
+  }
 }
+
